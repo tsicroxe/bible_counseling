@@ -1,0 +1,26 @@
+{
+  "name": "bible_counseling",
+  "version": "1.0.0",
+  "description": "This is a bible counseling website I created for a friend of a friend as part of building my web design portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsicroxe/bible_counseling.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsicroxe/bible_counseling/issues"
+  },
+  "homepage": "https://github.com/tsicroxe/bible_counseling#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.4"
+  }
+}

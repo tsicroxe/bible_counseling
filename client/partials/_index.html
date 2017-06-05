@@ -1,0 +1,61 @@
+<script>
+var min_w = 300;
+var vid_w_orig;
+var vid_h_orig;
+
+$(function() {
+
+	vid_w_orig = parseInt($('video').attr('width'));
+	vid_h_orig = parseInt($('video').attr('height'));
+
+	$(window).resize(function () { fitVideo(); });
+	$(window).trigger('resize');
+
+});
+
+function fitVideo() {
+
+	$('#video-viewport').width($('.fullsize-video-bg').width());
+	$('#video-viewport').height($('.fullsize-video-bg').height());
+
+	var scale_h = $('.fullsize-video-bg').width() / vid_w_orig;
+	var scale_v = $('.fullsize-video-bg').height() / vid_h_orig;
+	var scale = scale_h > scale_v ? scale_h : scale_v;
+
+	if (scale * vid_w_orig < min_w) {scale = min_w / vid_w_orig;};
+
+	$('video').width(scale * vid_w_orig);
+	$('video').height(scale * vid_h_orig);
+
+	$('#video-viewport').scrollLeft(($('video').width() - $('.fullsize-video-bg').width()) / 2);
+	$('#video-viewport').scrollTop(($('video').height() - $('.fullsize-video-bg').height()) / 2);
+
+};
+</script>
+
+<section class="fullsize-video-bg">
+	<div id="video-viewport">
+		<video width="1920" height="1280" autoplay muted loop>
+			<div id='quote' class="inner">
+				<div>
+					<h3>Do not fear, for I have redeemed you. I have called you by name, you are mine."</h3>
+					<p>Isaiah 43:1b
+					</p>
+				</div>
+			</div>
+			<source src="video/clouds.mp4" type="video/mp4" />
+			<source src="http://www.coverr.co/s3/mp4/Winter-Grass.webm" type="video/webm" />
+		</video>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Welcome</h1>
+				<h3>I'm thankful for the opportunity that I have to provide you with comfort, guidance, and solutitons to your problems using God's word.</h3>
+			</div>
+		</div>
+	</div>
+
+
+</section>

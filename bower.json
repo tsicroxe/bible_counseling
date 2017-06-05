@@ -1,0 +1,22 @@
+{
+  "name": "bible_counseling",
+  "description": "This is a bible counseling website I created for a friend of a friend as part of building my web design portfolio.",
+  "main": "server.js",
+  "authors": [
+    "tsicroxE <arbanakus@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/tsicroxe/bible_counseling",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "bootstrap": "^3.3.7"
+  }
+}
