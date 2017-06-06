@@ -29,7 +29,17 @@
 
 
     </script>
+    <script>
+      $(document).ready(function () {
 
+
+        $(document).on('click',function(){
+        $('.collapse').collapse('hide');
+       })
+
+
+      })
+    </script>
   </head>
   <body>
     <nav class='navbar navbar-default' id='my-navbar'>
@@ -49,6 +59,7 @@
             <li><a href='#!/biblical_counseling'>What is Biblical Counseling?</a></li>
             <li><a href='#!/bio'>About me</a></li>
             <li><a href='#!/contact'>Contact</a></li>
+            <li><a id='download' type='application/pdf' data='forms/pdi.pdf' class='btn btn-primary' href='forms/pdi.pdf'>Download Forms</a></li>
           </ul>
         </div>
 
@@ -136,7 +147,7 @@
 
                                       <div class="footerp">
 
-                                      <h2 class="title-median">Webenlance Pvt. Ltd.</h2>
+                                      <h2 class="title-median">Colleen Ryan</h2>
                                       <p><b>Email id:</b> <a href="mailto:info@youremail.com">info@youremail.com</a></p>
           <p><b>Office / Postal Address</b></p>
           <p>Longmeadow Community Church</br>28566 N. Lemon Road</br>Mundelein, IL 60060</p>
