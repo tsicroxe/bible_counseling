@@ -68,7 +68,7 @@ h3{
 
 .navbar{
   z-index: 5;
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
 }
 
 /*FOOTER*/
