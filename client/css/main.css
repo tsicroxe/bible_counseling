@@ -65,8 +65,6 @@ video {
 h3{
   font-family: 'Dancing Script', cursive;
 }
-/*h3 { font-family: 'Dancing Script', cursive; font-size: 3em; line-height: .9; font-weight: 900; letter-spacing: -.025em;  margin-bottom: .5em; }
-h3 + p { font-family: "Shadows Into Light Two", cursive; font-size: 1.5em;  }*/
 
 .navbar{
   z-index: 5;
