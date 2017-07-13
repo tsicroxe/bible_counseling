@@ -1,0 +1,46 @@
+<section >
+
+
+  <div class='row'>
+    <div class='col-md-4'>
+      <div class='col-lg-8 text-center'>
+        <div class='page-header' id='contact'>
+          <h2><b>Contact me</b></h2>
+        </div>
+        <p><b>If you have any questions or would like to make an appointment please feel free to contact me using this form.</b></p>
+
+      </div>
+    </div>
+    <div class='col-md-8'>
+      <form ng-submit='sendeMail(mail)' class='form-horizontal'>
+        <div class='form-group'>
+          <label for='mail.name' class='col-lg-2 control-label'>Name:</label>
+          <div class='col-lg-10'>
+            <input type='text' ng-model='mail.name' class='form-control' id='user-name' placeholder='Enter your name' required />
+          </div>
+        </div>
+
+
+        <div class='form-group'>
+          <label for='mail.message' class='col-lg-2 control-label'>Message:</label>
+          <div class='col-lg-10'>
+            <textarea ng-model='mail.message' name='user.message' id='user-message' class='form-control'
+            cols='20' rows='10' resize='none' placeholder='Enter your message'></textarea>
+          </div>
+        </div>
+
+        <div class='form-group'>
+          <div class='col-lg-10 offset-by-2'>
+            <input type='submit' class='btn btn-primary' value='RSVP'></input>
+          </div>
+        </div>
+        <div id='myAlert' class="alert alert-success collapse">
+          <strong>Success!</strong> RSVP successfully sent.
+        </div>
+
+
+      </form>
+    </div>
+
+  </div>
+</section>

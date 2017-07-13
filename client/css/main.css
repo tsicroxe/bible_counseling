@@ -23,12 +23,13 @@ main{
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   z-index: -1;
 }
-/*#quote{
-  z-index: 10;
-}*/
+
+#quote{
+	z-index: 10;
+}
 
 video { display: block; width: 100%; height: auto;}
 
@@ -78,9 +79,11 @@ footer{
 	padding-top: 40px;
 	padding-right: 0;
 	padding-bottom: 20px;
-	padding-left: 0;/*	border-top-width: 4px;
+	padding-left: 0;
+		border-top-width: 2px;
 	border-top-style: solid;
-	border-top-color: #003;*/
+	border-top-color: #15224f;
+
 }
 
 

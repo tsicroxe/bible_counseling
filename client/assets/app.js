@@ -13,7 +13,16 @@ var app = angular.module('app', ['ngRoute'])
       // controller: 'indexController',
       // controllerAs: 'ic'
     })
-
+    .when('/about', {
+      templateUrl: 'partials/_about.html',
+      // controller: 'indexController',
+      // controllerAs: 'ic'
+    })
+    .when('/contact', {
+      templateUrl: 'partials/_contact.html',
+      // controller: 'indexController',
+      // controllerAs: 'ic'
+    })
     .otherwise({
       redirectTo: '/'
     })
