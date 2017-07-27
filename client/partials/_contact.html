@@ -1,5 +1,4 @@
-<section >
-
+<div class="container">
 
   <div class='row'>
     <div class='col-md-4'>
@@ -9,8 +8,8 @@
         </div>
         <p><b>If you have any questions or would like to make an appointment please feel free to contact me using this form.</b></p>
 
-      </div>
-    </div>
+      </div> <!-- End col-lg-8 -->
+    </div> <!-- End col-md-4 -->
     <div class='col-md-8' id='message_form'>
       <form ng-submit='sendeMail(mail)' class='form-horizontal'>
         <div class='form-group'>
@@ -18,7 +17,7 @@
           <div class='col-lg-10'>
             <input type='text' ng-model='mail.name' class='form-control' id='user-name' placeholder='Enter your name' required />
           </div>
-        </div>
+        </div> <!-- End Name -->
 
 
         <div class='form-group'>
@@ -27,20 +26,20 @@
             <textarea ng-model='mail.message' name='user.message' id='user-message' class='form-control'
             cols='20' rows='10' resize='none' placeholder='Enter your message'></textarea>
           </div>
-        </div>
+        </div> <!-- End Message -->
 
         <div class='form-group'>
           <div class='col-lg-10 offset-by-2'>
             <input type='submit' class='btn btn-primary' value='Send Message'></input>
           </div>
-        </div>
+        </div> <!-- End Submit Button -->
+
         <div id='myAlert' class="alert alert-success collapse">
           <strong>Success!</strong> Message successfully sent.
         </div>
 
-
       </form>
-    </div>
+    </div> <!-- End Form-->
 
-  </div>
-</section>
+  </div> <!-- End Row -->
+</div> <!-- End container -->
