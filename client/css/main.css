@@ -6,6 +6,7 @@ html {
   font: normal 1em/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #fff;
   text-align: center;
+  /*background-color: beige;*/
   height: 100%; }
 body {
   height: 100%;
@@ -92,6 +93,8 @@ h3{
   margin-top: 50px;
 }*/
 
+
+
 .footer1 {
     background: #f8f8f8 repeat scroll left top;
 	padding-top: 40px;
@@ -101,7 +104,7 @@ h3{
 		border-top-width: 2px;
 	border-top-style: solid;
 	border-top-color: #15224f;
-
+	background-color: beige;
 }
 
 
