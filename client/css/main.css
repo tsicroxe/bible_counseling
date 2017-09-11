@@ -12,13 +12,15 @@ body {
 }
 
 main{
-    /*background-color:  #ccf2ff;*/
+	background-color: beige;
+	z-index: 0;
+
 }
 
 /*main { padding-top: 70px; }*/
 
 #video-viewport {
-  position: relative;
+  /*position: relative;*/
   top: 0;
   left: 0;
   width: 100%;
@@ -86,9 +88,9 @@ h3{
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(http://fonts.googleapis.com/css?family=Gudea);
 
-footer{
+/*footer{
   margin-top: 50px;
-}
+}*/
 
 .footer1 {
     background: #f8f8f8 repeat scroll left top;
@@ -233,10 +235,33 @@ footer{
 }
 
 
-#biblical_counseling{
+#_biblical_counseling{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#_colleen_pic{
   margin-top: 50px;
 }
 
+#_about_text{
+	margin-top: 70px;
+}
+
+#_about{
+	/*background: silver;*/
+	padding-bottom: 50px;
+}
+
+#_index{
+	padding-bottom: 50px;
+	margin-top: 50px;
+}
+
+#_faq{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
 
 /************************************************************
 *************************Footer******************************

@@ -10,18 +10,15 @@ var app = angular.module('app', ['ngRoute', 'ngAnimate'])
     })
     .when('/biblical_counseling', {
       templateUrl: 'partials/_biblical_counseling.html',
-      // controller: 'indexController',
-      // controllerAs: 'ic'
     })
     .when('/about', {
       templateUrl: 'partials/_about.html',
-      // controller: 'indexController',
-      // controllerAs: 'ic'
     })
     .when('/contact', {
       templateUrl: 'partials/_contact.html',
-      // controller: 'indexController',
-      // controllerAs: 'ic'
+    })
+    .when('/faq', {
+      templateUrl: 'partials/_faq.html',
     })
     .otherwise({
       redirectTo: '/'
