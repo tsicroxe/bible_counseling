@@ -28,6 +28,9 @@ main{
   height: 100%;
   overflow: hidden;
   z-index: -1;
+	/*height: 500px;*/
+
+	/*She wants height adjusted*/
 }
 
 video::-webkit-media-controls {
