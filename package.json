@@ -21,6 +21,8 @@
     "body-parser": "^1.17.2",
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
-    "mongoose": "^4.10.4"
+    "mongoose": "^4.10.4",
+    "nodemailer": "^4.4.0",
+    "xoauth2": "^1.2.0"
   }
 }

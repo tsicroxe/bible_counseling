@@ -24,7 +24,7 @@ app.use(bodyParser.json());
   //require mongoose configuration, use path.join to build the route
   // require(path.join(process.env['APPROOT'], 'server/config/mongoose.js'));
   //require routes configuration, get a function from the module.exports, that gets invoked while passing it the app
-  // require(path.join(process.env['APPROOT'], 'server/config/routes.js'))(app);
+  require(path.join(process.env['APPROOT'], 'server/config/routes.js'))(app);
 
 var server = app.listen(PORT, function(){
     console.log(`Listening on port ${PORT}`)
