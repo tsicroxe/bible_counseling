@@ -21,7 +21,7 @@ app.controller('indexController', ['$scope', '$location', 'mailFactory', functio
       if(data.success === true){
       bootbox.alert({
         title: 'Success!',
-        message: "Your RSVP has been successfully submitted",
+        message: "Your message has been successfully submitted",
         button: {
             class: 'btn-success',
             className: 'btn-success'
@@ -31,7 +31,7 @@ app.controller('indexController', ['$scope', '$location', 'mailFactory', functio
       else{
         bootbox.alert({
           title: 'Uh oh!',
-          message: "Your RSVP failed to submit. Please try again",
+          message: "Your message failed to submit. Please try again or contact the administrator",
           button: {
               class: 'btn-success',
               className: 'btn-success'
