@@ -47,6 +47,10 @@ video::-webkit-media-controls {
 	opacity: 1;
 }
 
+#come_on_in{
+  font-size: 18px;
+}
+
 video {
   width: 100%;
   height: auto;
