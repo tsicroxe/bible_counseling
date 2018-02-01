@@ -1,8 +1,6 @@
 
 
 
-
-var mongoose = require('mongoose')
 var nodemailer = require('nodemailer')
 const xoauth2 =('xoauth2')
 // var ses = require('nodemailer-ses-transport');
