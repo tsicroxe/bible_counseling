@@ -26,21 +26,16 @@
     <!-- Begin Controllers -->
     <script src="assets/controllers/indexController.js" charset="utf-8"></script>
     <script src="assets/factories/mailFactory.js" charset="utf-8"></script>
-
     <!-- End Controllers -->
-
 
     <script>
       $(document).ready(function () {
-
-
         $(document).on('click',function(){
-        $('.collapse').collapse('hide');
-       })
-
-
+          $('.collapse').collapse('hide');
+         })
       })
     </script>
+
   </head>
   <body>
     <nav class='navbar navbar-default' id='my-navbar'>
@@ -54,7 +49,6 @@
           </button>
           <a href='#!/' class='navbar-brand hidden-xs'>Home</a>
           <a href='#!/' class='navbar-brand visible-xs'>Colleen Ryan, MA</a>
-
         </div> <!-- Navbar Header -->
         <div class='collapse navbar-collapse' id='navbar-collapse'>
           <ul class='nav navbar-nav'>
@@ -65,124 +59,88 @@
             <li><a id='download' type='application/pdf' data='forms/pdi.pdf' class='btn btn-primary' href='forms/pdi.pdf'>Download Forms</a></li>
           </ul>
         </div>
-
-
       </div> <!-- End Container -->
     </nav> <!-- End Navbar -->
 
+    <!-- Main view for feeding partial HTML -->
     <main id='main' ng-view=''>
     </main>
-
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 
       <!--footer-->
-      <footer class="footer1">
-        <div class="container">
-
+    <footer class="footer1">
+      <div class="container">
         <div class="row"><!-- row -->
-            <div class="col-lg-4 col-md-4 col-sm-4"><!-- widgets column left -->
+          <div class="col-lg-4 col-md-4 col-sm-4"><!-- widgets column left -->
             <ul class="list-unstyled clear-margins"><!-- widgets -->
-                    	<li class="widget-container widget_nav_menu"><!-- widgets list -->
-                        <h1 class="title-widget">Site links</h1>
-                        <ul>
-                          <li><a  href="#!/home"><i class="fa fa-angle-double-right"></i> Home</a></li>
-                        	<li><a  href="#!/biblical_counseling"><i class="fa fa-angle-double-right"></i> About Biblical Counseling</a></li>
-                            <li><a  href="#!/about"><i class="fa fa-angle-double-right"></i> About Colleen</a></li>
-                            <li><a  href="#!/contact"><i class="fa fa-angle-double-right"></i> Contact</a></li>
-                            <li><a id='download' type='application/pdf' data='forms/pdi.pdf' class='btn btn-primary' href='forms/pdi.pdf'>Download Forms</a></li>
-                        </ul>
-  				            </li>
+              <li class="widget-container widget_nav_menu"><!-- widgets list -->
+                <h1 class="title-widget">Site links</h1>
+                  <ul>
+                    <li><a  href="#!/home"><i class="fa fa-angle-double-right"></i> Home</a></li>
+                  	<li><a  href="#!/biblical_counseling"><i class="fa fa-angle-double-right"></i> About Biblical Counseling</a></li>
+                    <li><a  href="#!/about"><i class="fa fa-angle-double-right"></i> About Colleen</a></li>
+                    <li><a  href="#!/contact"><i class="fa fa-angle-double-right"></i> Contact</a></li>
+                    <li><a id='download' type='application/pdf' data='forms/pdi.pdf' class='btn btn-primary' href='forms/pdi.pdf'>Download Forms</a></li>
+                  </ul>
+  				    </li>
+            </ul>
+          </div><!-- widgets column left end -->
+
+          <div class="col-lg-4 col-md-4 col-sm-4"><!-- widgets column left -->
+            <ul class="list-unstyled clear-margins"><!-- widgets -->
+              <li class="widget-container widget_nav_menu"><!-- widgets list -->
+                <h1 class="title-widget">Other Resources</h1>
+                  <ul>
+                    <li><a href="https://biblicalcounseling.com"><i class="fa fa-angle-double-right"></i> Association of Certified Biblical Counselors (ACBC)</a></li>
+			            	<li><a href="#"><i class="fa fa-angle-double-right"></i> Another resource</a></li>
+		              	<li><a href="#"><i class="fa fa-angle-double-right"></i> Yet another resource</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </div><!-- widgets column left end -->
+
+
+          <div class="col-lg-4 col-md-4 col-sm-4"><!-- widgets column center -->
+            <ul class="list-unstyled clear-margins"><!-- widgets -->
+              <li class="widget-container widget_recent_news"><!-- widgets list -->
+                <h1 class="title-widget">Contact Me </h1>
+                  <div class="footerp">
+                    <h2 class="title-median">Colleen Ryan</h2>
+                    <p><b>Email:</b> <a href="mailto:crbiblicalcounseling.com">Colleen@crbiblicalcounseling.com</a></p>
+                    <p><b>Office Address</b></p>
+                    <a href='https://www.google.com/maps/place/Longmeadow+Community+Church/@42.2780847,-88.0348672,17z/data=!3m1!4b1!4m5!3m4!1s0x880f99bfed087e0f:0x2dcbcec75e426393!8m2!3d42.2780808!4d-88.0326785'><p>Longmeadow Community Church</br>28566 N. Lemon Road</br>Mundelein, IL 60060</p></a>
+                    <p><b>Phone Number : </b>224-424-0478 </p>
+                  </div>
+
+                  <div class="social-icons">
+                    <ul class="nomargin">
                     </ul>
-            </div><!-- widgets column left end -->
-
-
-
-
-
-            <div class="col-lg-4 col-md-4 col-sm-4"><!-- widgets column left -->
-
-                <ul class="list-unstyled clear-margins"><!-- widgets -->
-                    	<li class="widget-container widget_nav_menu"><!-- widgets list -->
-                        <h1 class="title-widget">Other Resources</h1>
-                        <ul>
-                          <li><a href="https://biblicalcounseling.com"><i class="fa fa-angle-double-right"></i> Association of Certified Biblical Counselors (ACBC)</a></li>
-      			            	<li><a href="#"><i class="fa fa-angle-double-right"></i> Another resource</a></li>
-      		              	<li><a href="#"><i class="fa fa-angle-double-right"></i> Yet another resource</a></li>
-                        </ul>
-                      </li>
-                </ul>
-            </div><!-- widgets column left end -->
-
-
-                        <div class="col-lg-4 col-md-4 col-sm-4"><!-- widgets column center -->
-
-
-
-                                <ul class="list-unstyled clear-margins"><!-- widgets -->
-
-                                	<li class="widget-container widget_recent_news"><!-- widgets list -->
-
-                                        <h1 class="title-widget">Contact Me </h1>
-
-                                        <div class="footerp">
-
-                                        <h2 class="title-median">Colleen Ryan</h2>
-                                        <p><b>Email:</b> <a href="mailto:crbiblicalcounseling.com">Colleen@crbiblicalcounseling.com</a></p>
-            <p><b>Office Address</b></p>
-            <a href='https://www.google.com/maps/place/Longmeadow+Community+Church/@42.2780847,-88.0348672,17z/data=!3m1!4b1!4m5!3m4!1s0x880f99bfed087e0f:0x2dcbcec75e426393!8m2!3d42.2780808!4d-88.0326785'><p>Longmeadow Community Church</br>28566 N. Lemon Road</br>Mundelein, IL 60060</p></a>
-            <p><b>Phone Number : </b>224-424-0478 </p>
-                                        </div>
-
-                                        <div class="social-icons">
-
-                                        	<ul class="nomargin">
-
-                        <!-- <a href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-3x social-fb" id="social"></i></a>
-        	            <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social-gp" id="social"></i></a>
-        	            <a href="mailto:yourmeail@gmail.com"><i class="fa fa-envelope-square fa-3x social-em" id="social"></i></a> -->
-
-                                            </ul>
-                                        </div>
-                            		</li>
-                                  </ul>
-                               </div>
-                        </div>
+                  </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </footer>
+      </div>
+    </footer>
       <!--header-->
 
       <div class="footer-bottom">
-
       	<div class="container">
-
       		<div class="row">
-
       			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-
       				<div class="copyright">
-
       					© 2017, Colleen Ryan, M.A., All rights reserved
-
       				</div>
-
       			</div>
-
       			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-
       				<div class="design">
-
       					  <a target="_blank" href="">Web Design & Development by Andrew Banakus</a>
-
       				</div>
-
       			</div>
-
       		</div>
-
       	</div>
-
       </div>
 
   </body>

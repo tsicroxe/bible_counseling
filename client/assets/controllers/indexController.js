@@ -1,23 +1,16 @@
-console.log('running indexController')
-
-
-
 app.controller('indexController', ['$scope', '$location', 'mailFactory', function($scope, $location, mf){
 
   $scope.error = {message: ''}
 
   $scope.shortAlert = function(){
-    console.log('alert')
     alert("Windows successfully submitted")
   }
 
   $scope.sendeMail = function(mail){
     $scope.error.message = ''
-    console.log('mail', mail)
 
     mf.sendeMail(mail)
     .then(function(data){
-      console.log(data)
       if(data.success === true){
       bootbox.alert({
         title: 'Success!',
@@ -36,12 +29,10 @@ app.controller('indexController', ['$scope', '$location', 'mailFactory', functio
               class: 'btn-success',
               className: 'btn-success'
           }
-
         });
       }
     })
     $scope.mail = {}
   }
-
 
 }])
