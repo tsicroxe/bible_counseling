@@ -31,8 +31,8 @@ var mailController = {
               let HelperOptions = {
                 from: " <arbanakus@gmail.com>",
                 to: "arbanakus@gmail.com",
-                subject: `Email: ${req.body.email}`,
-                text: `Message:`+'\n'+'\n'+`${req.body.message}` +'\n' +'\n' + `<a href="mailto:${req.body.email}" target="_top">this link</a>`
+                subject: `Website inquiry from ${req.body.name}`,
+                text: `Message from ${req.body.name}:`+'\n'+'\n'+`${req.body.message}` +'\n' +'\n' + `Click here to reply: ${req.body.email}`
               }
               transporter.sendMail(HelperOptions, (err, info) => {
                 if(err){
