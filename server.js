@@ -4,16 +4,16 @@ var express = require('express'),
     app = express(),
     PORT = 8000,
     dotenv = require('dotenv').config(),
-    compression = require('compression');
+    compression = require('compression'),
+    minify = require('express-minify');
 
 
-
-
+app.use(compression());
+app.use(minify());
 app.use(express.static(path.resolve('client')))
 app.use(express.static(path.resolve('bower_components')))
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json());
-app.use(compression());
 
 // End Middleware
 
