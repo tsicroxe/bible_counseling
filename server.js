@@ -3,8 +3,8 @@ var express = require('express'),
     path = require('path'),
     app = express(),
     PORT = 8000,
-    dotenv = require('dotenv').config()
-
+    dotenv = require('dotenv').config(),
+    compression = require('compression');
 
 
 
@@ -13,7 +13,7 @@ app.use(express.static(path.resolve('client')))
 app.use(express.static(path.resolve('bower_components')))
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json());
-
+app.use(compression());
 
 // End Middleware
 
