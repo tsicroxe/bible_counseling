@@ -24,7 +24,7 @@
     "express": "^4.15.3",
     "express-minify": "^1.0.0",
     "mongoose": ">=5.7.5",
-    "nodemailer": "^4.4.2",
+    "nodemailer": "^6.4.16",
     "nodemailer-ses-transport": "^1.5.1",
     "xoauth2": "^1.2.0"
   }
